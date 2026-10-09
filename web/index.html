@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DengShell · SSH 工作台</title>
+  <title>PhShell · SSH 工作台</title>
   <meta name="referrer" content="no-referrer">
   <script src="bootstrap.js"></script>
   <script>if(location.protocol!=='wails:'&&location.hostname!=='wails.localhost'){const nonce=new URLSearchParams(location.search).get('window');if(/^[A-Za-z0-9_-]{24,96}$/.test(nonce||'')){window.CLOUDSHELL.detachedNonce=nonce;window.CLOUDSHELL.startupAnimation=false;}}</script>
@@ -11,6 +11,7 @@
   <script src="theme.js?v=20260920-v002-b70"></script>
   <link rel="stylesheet" href="vendor/xterm.css">
   <link rel="stylesheet" href="style.css?v=20260928-transfer1">
+  <link rel="stylesheet" href="phshell-theme.css?v=20261009-1">
   <link rel="stylesheet" href="theme.css?v=20260920-v002-b70">
   <link rel="stylesheet" href="workspace-tools.css?v=20261001-composer">
   <link rel="stylesheet" href="appearance.css?v=20260920-v002-b70">
@@ -27,7 +28,7 @@
   <link rel="stylesheet" href="help-guide.css?v=20260920-v002-b70">
   <link rel="stylesheet" href="appearance-tools.css?v=20260920-v002-b70">
   <link rel="stylesheet" href="font-library.css?v=20260920-v002-b70">
-  <link rel="icon" href="assets/dengshell.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/phshell.svg" type="image/svg+xml">
   <link rel="stylesheet" href="file-tools.css?v=20260928-selection2">
   <link rel="stylesheet" href="desktop-tray.css?v=20260920-v002-b70">
   <link rel="stylesheet" href="latency-chart.css?v=20260920-v002-b70">
@@ -90,7 +91,7 @@
 
   <header class="titlebar">
     <div class="brand">
-      <button class="icon-button brand-settings" id="settings-button" title="设置" aria-label="设置" aria-haspopup="menu" aria-controls="settings-menu" aria-expanded="false"><img class="brand-logo" src="assets/dengshell.svg" alt="" draggable="false"></button>
+      <button class="icon-button brand-settings" id="settings-button" title="设置" aria-label="设置" aria-haspopup="menu" aria-controls="settings-menu" aria-expanded="false"><img class="brand-logo" src="assets/phshell.svg" alt="" draggable="false"><span class="brand-name">PhShell</span></button>
       <button class="icon-button theme-toggle header-pill theme-pill" id="theme-toggle" aria-label="深色模式" aria-pressed="false" title="切换到深色模式"><svg class="theme-moon"><use href="#i-moon"/></svg><svg class="theme-sun"><use href="#i-sun"/></svg></button>
       <button class="icon-button header-pill" id="security-lock-button" aria-label="立即锁定" title="请先在设置中启用安全锁定" disabled><svg><use href="#i-lock"/></svg></button>
       <button class="icon-button header-pill sync-pill" id="sync-button" aria-label="同步" title="加密同步" aria-haspopup="dialog"><span aria-hidden="true">同</span></button>
