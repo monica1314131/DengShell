@@ -1,8 +1,8 @@
-# DengShell
+# PhShell
 
 **把 SSH 终端、远程文件、服务器监控和常用命令放在一个窗口里。**
 
-DengShell 是一款中文界面的开源 SSH 桌面工具，适合日常管理 VPS、维护 Linux 服务器、编辑远程配置和排查网络问题。支持 Windows、Linux、macOS 桌面和 Android，可同时连接多台服务器，并按自己的习惯调整字体、背景、布局和监控曲线。
+PhShell 是一款中文界面的开源 SSH 桌面工具，由原 DengShell 项目改名并进行界面改造。，适合日常管理 VPS、维护 Linux 服务器、编辑远程配置和排查网络问题。支持 Windows、Linux、macOS 桌面和 Android，可同时连接多台服务器，并按自己的习惯调整字体、背景、布局和监控曲线。
 
 本说明对应 **v0.03**。R20 以来的累计变化汇总在 [更新日志](CHANGELOG.md)。
 
