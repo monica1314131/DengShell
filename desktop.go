@@ -423,7 +423,7 @@ func runDesktopBackend(application desktopBackend, assets fs.FS, configDir, deta
 	}
 	nativeHandler := nativeAssetHandler(application, assets)
 	return wails.Run(&options.App{
-		Title: "DengShell", Width: initial.Width, Height: initial.Height, MinWidth: initial.MinWidth, MinHeight: initial.MinHeight,
+		Title: "PhShell", Width: initial.Width, Height: initial.Height, MinWidth: initial.MinWidth, MinHeight: initial.MinHeight,
 		Frameless:        goruntime.GOOS == "windows",
 		StartHidden:      goruntime.GOOS == "windows",
 		BackgroundColour: options.NewRGB(240, 243, 247),
@@ -496,13 +496,13 @@ func runDesktopBackend(application desktopBackend, assets fs.FS, configDir, deta
 			})
 		},
 		DragAndDrop: &options.DragAndDrop{EnableFileDrop: true, DisableWebViewDrop: false},
-		Linux:       &linux.Options{ProgramName: "dengshell", Icon: desktopIcon, WebviewGpuPolicy: linux.WebviewGpuPolicyOnDemand},
+		Linux:       &linux.Options{ProgramName: "phshell", Icon: desktopIcon, WebviewGpuPolicy: linux.WebviewGpuPolicyOnDemand},
 		Mac: &mac.Options{
 			DisableZoom: true, DisableEscapeExitsFullscreen: true,
-			About: &mac.AboutInfo{Title: "DengShell", Message: app.ApplicationVersion + " · SSH 终端与服务器管理", Icon: desktopIcon},
+			About: &mac.AboutInfo{Title: "PhShell", Message: app.ApplicationVersion + " · SSH 终端与服务器管理", Icon: desktopIcon},
 		},
 		Windows: &windows.Options{
-			WindowClassName: "DengShellWindow", DisableWindowIcon: false,
+			WindowClassName: "PhShellWindow", DisableWindowIcon: false,
 			IsZoomControlEnabled: false, DisablePinchZoom: true,
 			WebviewUserDataPath: desktopWebviewPath(configDir, detachedNonce),
 			Messages: &windows.Messages{
